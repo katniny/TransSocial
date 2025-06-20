@@ -1,5 +1,2 @@
 node_modules
-.firebase
-.firebaserc
-firebase-debug.log
-ui-debug.log
+.env

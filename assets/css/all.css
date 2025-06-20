@@ -1,559 +1,97 @@
-/* 
-   all.css should import things that 
-   every page is going to use directly in the file,
-   then use @import url(URL); to import things that
-   other pages may need 
-
-   this helps keep styling consistent, but
-   make the CSS easier to work with! :D
-*/
-
-/* 
-   NOTICE: 
-   due to a browser limitation (probably W3C specs),
-   @import files have to be at the TOP before any css is applied.
-   some browsers may allow it to be after CSS, but it may be unpredictable.
-   so just put it at the top please!
-*/
-
-/* page loader */
 @import url("/assets/css/pageLoader.css");
-
-/* 
-   default colors for transsocial
-   may be overriden by a theme, if user has one applied.
-   please see /assets/js/pageLoader.js for other themes!
-   (note: custom themes created by users cannot be modified)
-*/
 @import url("/assets/css/defaultColors.css");
-
-/* the header */
 @import url("/assets/css/header.css");
-
-/* the sidebar */
 @import url("/assets/css/sidebar.css");
-
-/* 
-   .fa-brands 
-   TransSocial, by default, assumes that they're going to be buttons,
-   but if they're not, you can just add: 
-   style="color: var(--text);" to make them a solid color
-
-   used in the sidebar
-*/
 @import url("/assets/css/brandsIcon.css");
-
-/* 
-   this is the container CONTAINING the notes,
-   not the notes themselves!
-
-   notes & its children: /assets/css/notes.css
-*/
 @import url("/assets/css/notesContainer.css");
-
-/* 
-   this is the "TransSocial Accounts" area
-   on the right on desktop
-*/
 @import url("/assets/css/transsocialAccounts.css");
-
-/* 
-   these are the NOTES and ITS CHILDREN themselves,
-   not the note container!
-
-   note container: /assets/css/notesContainer.css
-*/
 @import url("/assets/css/notes.css");
-
-/* 
-   the hamburger menu to open the sidebar on mobile devices
-*/
 @import url("/assets/css/hamburgerMenu.css");
-
-/* 
-   this is the banner you see when not signed into
-   transsocial
-*/
 @import url("/assets/css/notSignedIn_Banner.css");
-
-/* 
-   this is the styling for the "Create" button
-   on the sidebar, not the modal itself!
-*/
 @import url("/assets/css/createNote_sidebarBtn.css");
-
-/* 
-   this is the styling for modals on transsocial,
-   which ALL modals use!
-*/
 @import url("/assets/css/dialogDefault.css");
-
-/* 
-   this is for the newest updates modal
-
-   TODO: check if this modal is still used,
-   if it is, remove it!
-*/
-
 @import url("/assets/css/newestUpdates_dialog.css");
-
-/* 
-   styling for the textareas
-   any <textarea> element will use this,
-   so please use add or use a difference css file if needed!
-*/
 @import url("/assets/css/textarea.css");
-
-/*
-   the "Create!" button in the note creation modal
-*/
-@Import url("/assets/css/publishNoteBtn_inModal.css");
-
-/* 
-   the tabs in the note creation modal
-*/
+@import url("/assets/css/publishNoteBtn_inModal.css");
 @import url("/assets/css/noteCreationModalTabs.css");
-
-/*
-   the icons inside modals (mainly inside the note
-   creation modal)
-*/
-
 @import url("/assets/css/modalIcons.css");
-
-/* 
-   the popin and popout animations for modals
-*/
 @import url("/assets/css/modalPopupPopoutAnim.css");
-
-/* 
-   the default styling for <select> elements
-*/
 @import url("/assets/css/dropdowns.css");
-
-/*
-   the new notes alert button
-*/
 @import url("/assets/css/newNotesAlert.css");
-
-/*
-   the "TransSocial is currently in the..." string
-*/
 @import url("/assets/css/versionNotice.css");
-
-/* 
-   the button that appears when new notes are posted
-   so the user can view them without refreshing
-*/
 @import url("/assets/css/newNotesAvailable.css");
-
-/* 
-   user not found
-   (when visiting a user doesnt exist,
-   e.g. https://transs.social/u/ISAJFOIASFJSAOIFJASOFIASJ)
-*/
 @import url("/assets/css/userNotFound.css");
-
-/* 
-   the .melissa element which contains the user profile
-   (e.g. the styling for the pfp and whatnot at 
-   https://transs.social/u/katniny)
-
-   my girlfriend named the element and gave it 
-   a literal name lol
-   - katty (katniny)
-*/
 @import url("/assets/css/melissa.css");
-
-/* 
-   note error?
-   i actually dont remember what this is
-*/
 @import url("/assets/css/noteError.css");
-
-/* 
-   image preview in the note creation modal
-   when an image is uploaded
-*/
 @import url("/assets/css/imgToBeUploaded.css");
-
-/* 
-   divider...
-   its, uh, exactly what it says... a divider
-*/
 @import url("/assets/css/divider.css");
-
-/* 
-   the "Reply to Note" button &
-   the "What's on your mind?" button on /home and /note/{id}
-   respectively
-*/
 @import url("/assets/css/replyToNote.css");
-
-/* 
-   note content
-*/
 @import url("/assets/css/noteContent.css");
-
-/* 
-   the icon we use for editing
-   fa-solid fa-pen-to-square from fontawesome!
-*/
 @import url("/assets/css/editIcon.css");
-
-/*
-   the cookie you notice when you have not clicked
-   "Accept" yet (or your cookies were cleared for 
-   transs.social)
-*/
 @import url("/assets/css/cookieNotice.css");
-
-/*
-   the default styling for <button> elements,
-   which will be automatically applied
-   unless overridden.
-*/
 @import url("/assets/css/defaultButton.css");
-
-/*
-   the danger button, which has additional styling
-   for dangerous operations (e.g. deleting your account)
-*/
 @import url("/assets/css/dangerButton.css");
-
-/*
-   the default styling for <input> elements,
-   which will be automatically applied
-   unless overridden.
-*/
 @import url("/assets/css/defaultInput.css");
-
-/* 
-   the follow button on user profiles
-*/
 @import url("/assets/css/followButton.css");
-
-/*
-   the styling for notifications at /notifications
-*/
 @import url("/assets/css/notifications.css");
-
-/* 
-   the policies under "TransSocial Accounts"
-*/
 @import url("/assets/css/policiesSide.css");
-
-/* 
-   the element that covers the note creation
-   modal when a note is being created
-*/
 @import url("/assets/css/coverCreateANote.css");
-
-/* 
-   the element that appears when a note successfully
-   sends
-*/
 @import url("/assets/css/noteSent.css");
-
-/* 
-   the sidebar policies so the policies
-   are still easily findable on mobile
-*/
 @import url("/assets/css/sidebarPolicies.css");
-
-/* 
-   the users open chats
-*/
 @import url("/assets/css/openChats.css");
-
-/*
-   the userActions modal, which users can use to 
-   block, report, etc.
-*/
 @import url("/assets/css/userActions.css");
-
-/* 
-   the prompt that appears when visiting a
-   blocked users profile
-*/
 @import url("/assets/css/blockedPrompt.css");
-
-/* 
-   the element that covers the note update
-   modal when a note is being updated
-*/
 @import url("/assets/css/coverUpdatingNote.css");
-
-/* 
-   the video preview when uploading a video
-*/
 @import url("/assets/css/vidToUploaded.css");
-
-/* 
-   the "More..." button on the sidebar
-*/
 @import url("/assets/css/moreSidebarContent.css");
-
-/* 
-   the profile container in the bottom of the 
-   sidebar
-*/
 @import url("/assets/css/profileSidebarContainer.css");
-
-/* 
-   user banners on profiles
-*/
 @import url("/assets/css/userBanner.css");
-
-/* 
-   the sign out button
-*/
 @import url("/assets/css/signOutButton.css");
-
-/* 
-   the selectUserToDM modal
-*/
 @import url("/assets/css/selectUserToDm.css");
-
-/* 
-   the infamous create note modal
-*/
 @import url("/assets/css/createNoteModal.css");
-
-/* 
-   a back arrow icon... be shooketh
-*/
 @import url("/assets/css/backArrow.css");
-
-/* 
-   checkboxes in the create note modal to flag notes as:
-   - nsfw
-   - sensitive
-   - political
-*/
 @import url("/assets/css/nsfwSensPolitChecks.css");
-
-/*
-   our stylized scrollbar
-*/
 @import url("/assets/css/scrollbar.css");
-
-/* 
-   the download page 
-*/
 @import url("/assets/css/downloadPage.css");
-
-/* 
-   the /auth/login and /auth/register pages
-*/
 @import url("/assets/css/loginRegisterPages.css");
-
-/* 
-   the updates at /updates
-*/
 @import url("/assets/css/updates.css");
-
-/* 
-   achievement unlock when an achievement is
-   unlocked
-*/
 @import url("/assets/css/achievementUnlock.css");
-
-/* 
-   for notes that quoted another note
-*/
 @import url("/assets/css/quotes.css");
-
-/* 
-   account manager (sidebar?)
-*/
 @import url("/assets/css/accountManager.css");
-
-/*
-   user dropdown selection
-*/
 @import url("/assets/css/dropdownSelectionUser.css");
-
-/* 
-   the tabs on the settings page
-*/
 @import url("/assets/css/settingsTabs.css");
-
-/* 
-   the users profile picture in the settings
-*/
 @import url("/assets/css/settingsPfp.css");
-
-/*
-   the theme selection modal
-*/
 @import url("/assets/css/themeSelect.css");
-
-/*
-   the currently active chat
-*/
 @import url("/assets/css/activeChat.css");
-
-/* 
-   the messaging bar in DMs
-*/
 @import url("/assets/css/messagingBar.css");
-
-/* 
-   the messages container,
-   not the messages themselves!
-
-   messages: /assets/css/speechBubble.css
-*/
 @import url("/assets/css/messagesContainer.css");
-
-/* 
-   the other persons profile at the top
-   whomst the user is DMing
-*/
 @import url("/assets/css/messagingOtherProfile.css");
-
-/* 
-   the user studio page
-*/
 @import url("/assets/css/userStudio.css");
-
-/* 
-   UNUSED BUT PLANNED: 
-   in note creation modals textarea and text is highlighted,
-   allow for quick markdown with a toolbar
-*/
 @import url("/assets/css/markdownToolbar.css");
-
-/* 
-   the badge that tells you your notification count
-*/
 @import url("/assets/css/notificationsCount.css");
-
-/*
-   browser logos
-*/
 @import url("/assets/css/browserLogos.css");
-
-/* 
-   animated gradient
-*/
 @import url("/assets/css/animateGradient.css");
-
-/* 
-   transsocial's footer in the rare instance its used
-*/
 @import url("/assets/css/footer.css");
-
-/*
-   the "Donate" tabs list item
-*/
 @import url("/assets/css/subscriptionTab.css");
-
-/*
-   the contributor badge
-*/
 @import url("/assets/css/contributorBadge.css");
-
-/* 
-   the contributors div
-*/
 @import url("/assets/css/contributors.css");
-
-/*
-   the spotify player
-*/
 @import url("/assets/css/spotifyPlayer.css");
-
-/*
-   add spotify embed to note button
-*/
 @import url("/assets/css/addToNote.css");
-
-/*
-   the default styling for <a> elements,
-   which will be automatically applied
-   unless overridden.
-*/
 @import url("/assets/css/defaultLink.css");
-
-/* 
-   banner settings
-*/
 @import url("/assets/css/bannerSettings.css");
-
-/*
-   the default styling for <small> elements,
-   which will be automatically applied
-   unless overridden.
-*/
 @import url("/assets/css/defaultSmall.css");
-
-/*
-   theme selected 
-*/
 @import url("/assets/css/themeSelected.css");
-
-/*
-   registration badge
-*/
 @import url("/assets/css/registrationBadge.css");
-
-/* 
-   xmas hat on logo during december
-*/
 @import url("/assets/css/xmashat.css");
-
-/*
-   aurora announcement modal
-*/
 @import url("/assets/css/aurora.css");
-
-/*
-   glitched text
-*/
 @import url("/assets/css/glitchedText.css");
-
-/* 
-   the text selection color
-*/
 @import url("/assets/css/selectionColors.css");
-
-/*
-   the buttons for mature/sensitive/political 
-   prefs popups
-*/
 @import url("/assets/css/resizeButtons.css");
-
-/* 
-   the cta on transsocial /index.html
-*/
 @import url("callToAction.css");
-
-/*
-   the main selling point on the front page
-*/
 @import url("sellingPoint.css");
-
-/* 
-   the main points on the front page
-*/
 @import url("mainPoint.css");
-
-/*
-   the "remembering [user] text on a deceased users profile
-*/
 @import url("rememberingUser.css");
-
-/* 
-   banner on the home.html page when a service outage
-   is occurring
-*/
 @import url("serviceOutage.css");
-
-/*
-   for good, warning, and caution info types
-*/
 @import url("info.css");
 
 /* fonts */

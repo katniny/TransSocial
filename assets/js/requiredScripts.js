@@ -8,11 +8,13 @@ if (!window.location.origin.startsWith("http://127.0.0.1") && !window.location.o
 
 // if a script is used on every page, we can call it here
 // as a "dependency"
-function loadScript(src, async) {
+function loadScript(src, async, type) {
    return new Promise((resolve, reject) => {
       const script = document.createElement("script");
       script.src = src;
       script.async = async;
+      if (type)
+         script.type = type;
       script.onload = () => resolve(src);
       script.onerror = () => reject(new Error(`Failed to load script: ${src}`));
       document.head.appendChild(script);
@@ -30,9 +32,9 @@ async function loadAllScripts() {
       await loadScript("https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js", false);
       await loadScript("https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js", false);
       await loadScript("https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js", false);
-      await loadScript("/assets/js/firebase.js", false);
+      await loadScript("/assets/js/firebase.js", false, "module");
       await loadScript("/assets/js/utils.js", false);
-      await loadScript("/assets/js/ts_fas_acih.js", false);
+      await loadScript("/assets/js/ts_fas_acih.js", false, "module");
 
       // page loader
       await loadScript("/assets/js/setTheme.js", false);

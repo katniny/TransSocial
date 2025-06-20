@@ -1,3 +1,5 @@
+import { firebaseConfig } from "./firebase.js";
+
 // Quote renote ID
 let renotingNote = null;
 
