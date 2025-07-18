@@ -15,6 +15,7 @@
             import { ScriptLoader } from "../assets/js/scriptLoader.js";
 
             ScriptLoader.load(
+                { src: "../assets/js/auth/checkIfSignedIn.js", async: false, type: "module" },
                 { src: "../assets/js/auth/login.js", async: false, type: "module" },
                 { src: "../assets/js/ui/resetPassword.js", async: false, type: "module" }
             ).then(() => {

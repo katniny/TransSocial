@@ -11,10 +11,13 @@ yes, also the technical details:
     letting us made Auride better, and faster.
     - Modular JavaScript files will allow us to catch bugs faster, as modular
     JavaScript files are a lot more restrictive and verbose.
-- 
+- Checking signed in/out status is quicker
+    - Auride no longer waits for the entire page to load before redirecting
+    if signed in/out. Auride will now await to see the users logged in status
+    before doing the appropriate action, if any is necessary at all.
 
 ## user end
 - Added reset password to the login page
-    - Truly revoluntary feature, I know, but, Auride has been lacking this feature from
+    - Truly revoluntary feature, I know, but, Auride has been lacking this feature for
     a long time now. You were honestly SOL if you didn't know your password.
-    Now it's not a worry!
+    Now it's not a worry! Unless you don't know your email...
