@@ -1,3 +1,11 @@
+// alert dev console users to be careful :p
+// if not literally developing though
+if (!window.location.origin.startsWith("http://127.0.0.1") && !window.location.origin.startsWith("http://localhost")) {
+   console.log("%cStop!", "color: red; font-size: 35px;");
+   console.log("%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable a Auride feature or 'hack' someone's account, it is a scam and will give them access to your Auride account.", "color: white; font-size: 15px; font-family: sans-serif;");
+   console.log(" ");
+}
+
 // if a script is used on every page, we call it here
 // as a "dependency"
 function loadScript(src, async, type) {
@@ -22,6 +30,10 @@ async function loadAllScripts() {
         await loadScript("https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js", false);
         await loadScript("https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js", false);
         await loadScript("/assets/js/firebase.js", false, "module");
+
+        // done!
+        console.log("All page scripts loaded successfully!");
+        document.dispatchEvent(new Event("scriptsLoaded"));
     } catch (error) {
         console.error("Error loading scripts: ", error);
     }

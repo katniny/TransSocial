@@ -5,6 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Auride</title>
         <script src="assets/js/requiredScripts.js" type="module"></script>
+        <script defer type="module">
+            import { ScriptLoader } from "./assets/js/scriptLoader.js";
+
+            ScriptLoader.load(
+                { src: "assets/js/test.js", async: false, type: "module" }
+            ).then(() => {
+                console.log("Scripts for this page have been loaded successfully.");
+            }).catch((error) => {
+                console.error("An error occurred: ", error, " please try refreshing.");
+            });
+        </script>
     </head>
     
     <body>
