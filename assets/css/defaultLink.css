@@ -1,8 +1,0 @@
-a {
-   color: var(--main-color);
-}
-
-a:hover {
-   color: var(--main-color-darker);
-   text-decoration: none;
-}

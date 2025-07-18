@@ -1,8 +1,0 @@
-.serviceOutage {
-    color: var(--warning-text);
-    margin-top: 5px;
-}
-
-.serviceOutage i {
-    color: var(--warning-text);
-}

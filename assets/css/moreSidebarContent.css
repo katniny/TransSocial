@@ -1,8 +1,0 @@
-.sidebar .moreContent {
-   position: fixed;
-   background: var(--background);
-   transform: translate(100px, -80px);
-   border-radius: 25px;
-   padding: 5px;
-   max-width: 250px;
-}

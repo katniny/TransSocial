@@ -1,8 +1,0 @@
-.fa-solid.fa-pen-to-square {
-   cursor: pointer;
-   transition: all 0.1s linear;
-}
-
-.fa-solid.fa-pen-to-square:hover {
-   color: var(--main-color);
-}
