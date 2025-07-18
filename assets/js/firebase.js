@@ -10,14 +10,13 @@ const firebaseConfig = {
 };
 
 // initialize firebase
-const app = firebase.initializeApp(firebaseConfig);
+const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
+
 const auth = firebase.auth();
 const database = firebase.database();
 const storage = firebase.storage();
 const storageRef = storage.ref();
 const timestamp = firebase.database.ServerValue.TIMESTAMP;
-
-console.log("Firebase initialized successfully since it reaches this point!", firebaseConfig);
 
 // we export this so we can access them in other scripts
 export { app, auth, database, storage, storageRef, timestamp };

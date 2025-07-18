@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login | Auride</title>
+        <link rel="shortcut icon" href="../assets/imgs/favicon.png" type="image/png">
+        
+        <!-- css -->
+        <link rel="stylesheet" href="../assets/css/all.css">
+
+        <!-- scripts -->
+        <script src="../assets/js/requiredScripts.js" type="module"></script>
+        <script defer type="module">
+            import { ScriptLoader } from "../assets/js/scriptLoader.js";
+
+            ScriptLoader.load(
+                { src: "../assets/js/auth/login.js", async: false, type: "module" },
+                { src: "../assets/js/ui/resetPassword.js", async: false, type: "module" }
+            ).then(() => {
+                console.log("Scripts for this page have been loaded successfully.");
+            }).catch((error) => {
+                console.error("An error occurred: ", error, " please try refreshing.");
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div class="formBox">
+            <h1><i class="fa-solid fa-handshake-simple"></i> Welcome back!</h1>
+            <p>Login into your Auride account. <a href="/auth/register">Don't have an account?</a></p>
+
+            <input type="text" id="email" placeholder="Enter your email address" />
+            <input type="password" id="password" placeholder="Enter your password" />
+            <p id="errorTxt" class="infoCaution" style="display: none;">No error message to display.</p>
+            <small>By using Auride, you agree to our <a href="/policies/">policies</a>.</small>
+            <br />
+            <a href="javascript:void(0);" onclick="resetPassword()">Forgot password?</a>
+
+            <br />
+            <br />
+
+            <button style="width: 100%;" onclick="login()" id="loginBtn">Login</button>
+        </div>
+    </body>
+</html>

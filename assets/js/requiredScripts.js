@@ -8,7 +8,7 @@ if (!window.location.origin.startsWith("http://127.0.0.1") && !window.location.o
 
 // if a script is used on every page, we call it here
 // as a "dependency"
-function loadScript(src, async, type) {
+function loadScript(src, async, type, crossorigin) {
     return new Promise((resolve, reject) => {
         const script = document.createElement("script");
         script.src = src;
@@ -30,6 +30,12 @@ async function loadAllScripts() {
         await loadScript("https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js", false);
         await loadScript("https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js", false);
         await loadScript("/assets/js/firebase.js", false, "module");
+
+        // html element behaviors
+        await loadScript("/assets/js/closeModalBehavior.js", false);
+
+        // fontawesome
+        await loadScript("https://kit.fontawesome.com/be7c331826.js", false, "", "anonymous");
 
         // done!
         console.log("All page scripts loaded successfully!");
