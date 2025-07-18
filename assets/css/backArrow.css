@@ -1,0 +1,8 @@
+.fa-solid.fa-arrow-left {
+   transition: all 0.1s linear;
+}
+
+.fa-solid.fa-arrow-left:hover {
+   cursor: pointer;
+   color: var(--main-color);
+}

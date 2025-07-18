@@ -1,0 +1,9 @@
+.signOutButton {
+   width: 150px;
+   border: 1px solid var(--error-text);
+   margin-top: 7px;
+}
+
+.signOutButton:hover {
+   background: var(--error-text);
+}

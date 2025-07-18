@@ -1,0 +1,67 @@
+.loginregisterContainer {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   padding: 15px;
+   border-radius: 25px;
+   width: 700px;
+   background: var(--note-background);
+   text-align: center;
+}
+
+.loginregisterContainer img {
+   width: 400px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+@media (max-width: 715px) {
+   .loginregisterContainer {
+      width: 90vw;
+   }
+
+   .loginregisterContainer img {
+      width: 90vw;
+   }
+}
+
+.loginregisterContainer input {
+   width: 300px;
+}
+
+.formBox {
+   background: var(--note-background);
+   width: 90%;
+   max-width: 600px;
+   min-width: 300px;
+   height: 60%; 
+   max-height: 500px; 
+   min-height: 200px; 
+   margin: 50px auto;
+   padding: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   box-sizing: border-box;
+}
+ 
+@media (max-width: 768px) {
+   .formBox {
+      width: 95%; 
+      height: auto;
+      padding: 15px;
+   }
+}
+ 
+@media (max-width: 480px) {
+   .formBox {
+      width: 100%; 
+      margin-top: 20px; 
+   }
+ }
+
+.formBox input {
+   margin-top: 10px;
+}

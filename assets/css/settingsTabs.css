@@ -1,0 +1,31 @@
+.settingsTabs a {
+   text-decoration: none;
+   color: var(--text-semi-transparent);
+   margin-right: 5px;
+   cursor: pointer;
+}
+
+.settingsTabs a.active {
+   color: var(--main-color);
+   text-decoration: underline;
+}
+
+#profileTab-profile,
+#profileTab-account,
+#profileTab-personalization,
+#profileTab-subscription,
+#profileTab-environment {
+   background: var(--note-background);
+   width: 100%;
+   padding: 10px;
+   padding-right: 0px;
+   border-radius: 25px;
+}
+
+#profileTab-account,
+#profileTab-personalization,
+#profileTab-subscription,
+#profileTab-environment {
+   transform: translate(15px, -15px);
+   width: 97%;
+}

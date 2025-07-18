@@ -1,0 +1,12 @@
+dialog .mainTab-noteCreation.hidden {
+   display: none;
+}
+
+dialog .settingsStuff.hidden,
+dialog #musicTab.hidden {
+   display: none;
+}
+
+dialog .settingsStuff.active {
+   color: var(--main-color);
+}

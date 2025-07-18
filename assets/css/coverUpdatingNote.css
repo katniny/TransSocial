@@ -1,0 +1,9 @@
+.coverUpdatingNote {
+   position: fixed;
+   width: 770px;
+   height: 284px;
+   background: var(--main-color-darker);
+   opacity: 50%;
+   transform: translate(-10px, -10px);
+   border-radius: 10px;
+}

@@ -1,0 +1,65 @@
+/* Align Body Text to the Left */
+body {
+    text-align: left;
+}
+
+/* Add a Margin to Body Content */
+.email {
+    margin-left: 25px;
+}
+
+.username {
+    margin-left: 25px;
+}
+
+.password {
+    margin-left: 25px;
+}
+
+.delete-acc {
+    margin-left: 25px;
+}
+
+.uninstall-app {
+    margin-left: 25px;
+    display: none;
+}
+
+.unlink-acc {
+    margin-left: 25px;
+}
+
+/* Edit Button Styling */
+.edit-btn {
+    padding: 5px 15px;
+    font-size: 14px;
+    margin-left: 5px;
+    background: #19324e;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid transparent;
+    transition: all 0.25s ease-in-out;
+}
+
+.edit-btn:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    background: #224268;
+}
+
+/* Danger Zone Button Styling */
+.danger-btn {
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 2px solid red;
+    background: transparent;
+    color: white;
+    transition: all 0.15s ease-in-out;
+    margin-top: 5px;
+}
+
+.danger-btn:hover {
+    background: red;
+    cursor: pointer;
+}

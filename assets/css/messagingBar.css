@@ -1,0 +1,41 @@
+.sendAndMedia {
+   position: absolute;
+   bottom: 10px;
+   width: 98%;
+}
+
+.sendAndMedia input {
+   max-width: 98%;
+   width: auto;
+}
+
+.sendAndMedia input,
+.sendAndMedia button {
+   float: left;
+}
+
+.sendAndMedia button {
+   border: transparent;
+   transform: translateY(10px);
+   margin-left: 5px;
+}
+
+.sendAndMedia button:hover {
+   background: transparent;
+}
+
+.sendAndMedia button.inactive {
+   opacity: 0.5;
+}
+
+.sendAndMedia button.inactive:hover i {
+   color: var(--text);
+}
+
+.sendAndMedia button i {
+   transition: all 0.15s ease;
+}
+
+.sendAndMedia button:hover i {
+   color: var(--main-color);
+}

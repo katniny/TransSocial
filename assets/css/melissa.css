@@ -1,0 +1,249 @@
+.melissa {
+   margin-left: 430px;
+   max-width: 50%;
+   transform: translateY(60px);
+}
+
+@media (max-width: 768px) {
+   .melissa {
+      margin-left: 0px;
+      max-width: 100%;
+   }
+}
+
+@media (max-width: 1794px) {
+   .melissa {
+      margin-left: 285px;
+   }
+}
+
+@media (max-width: 1572px) {
+   .melissa {
+      max-width: 55%;
+   }
+}
+
+@media (max-width: 1402px) {
+   .melissa {
+      max-width: 50%;
+   }
+}
+
+@media (max-width: 1260px) {
+   .melissa {
+      max-width: 45%;
+   }
+}
+
+@media (max-width: 1148px) {
+   .melissa {
+      margin-left: 0px;
+      max-width: 100%;
+   }
+}
+
+.melissa .info {
+   display: flex;
+   flex-direction: column;
+}
+
+@media (max-width: 768px) {
+   .melissa {
+      margin-left: 15px;
+   }
+}
+
+.melissa .userImage-profile {
+   width: 175px;
+   height: 175px;
+   border-radius: 50%;
+   margin-left: 15px;
+   margin-top: 15px;
+   float: left;
+   background: var(--profile-picture-bg);
+   object-fit: cover;
+   z-index: 1;
+}
+
+.melissa #display-profile {
+   float: left;
+   max-width: auto;
+   margin-left: 15px;
+   margin-top: 15px;
+   margin-right: 15px;
+}
+
+.melissa #display-profile.canBeUnderlined:hover {
+   text-decoration: underline;
+}
+
+.melissa #display-profile .emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+
+.melissa #username-profile {
+   color: var(--text-semi-transparent);
+   float: left;
+   max-width: auto;
+   margin-left: 15px;
+   margin-right: 15px;
+   font-size: 20px;
+}
+
+.melissa #username-profile.canBeUnderlined:hover {
+   text-decoration: underline;
+}
+
+.melissa #pronouns-profile {
+   float: left;
+   max-width: auto;
+   margin-left: 15px;
+   margin-right: 15px;
+   color: var(--text-semi-transparent);
+   font-size: 20px;
+}
+
+.melissa #pronouns-profile.canBeUnderlined:hover {
+   text-decoration: underline;
+}
+
+.melissa #bio-profile {
+   margin-left: 15px;
+   margin-right: 15px;
+   margin-top: 15px;
+}
+
+@-moz-document url-prefix() {
+   .melissa #bio-profile {
+      margin-bottom: 15px;
+   }
+}
+
+.melissa #bio-profile .emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+
+.melissa #bio-profile a {
+   color: var(--main-color);
+}
+
+.melissa #bio-profile a:hover {
+   color: var(--main-color-darker);
+   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+   .melissa .userImage-profile {
+      margin-left: 0px;
+   }
+
+   .melissa #display-profile {
+      margin-left: 5px;
+      margin-right: 5px;
+   }
+
+   .melissa #username-profile {
+      margin-left: 5px;
+      margin-right: 5px;
+   }
+
+   .melissa #pronouns-profile {
+      margin-left: 5px;
+      margin-right: 5px;
+   }
+
+   .melissa #bio-profile {
+      margin-left: 5px;
+      margin-right: 0px;
+      width: 100%;
+   }
+
+   .melissa {
+      width: 93%;
+      margin-left: 5px;
+   }
+}
+
+.melissa .follow-profile {
+   float: right;
+   margin-right: 20px;
+   font-size: large;
+   padding: 5px;
+   border-radius: 20px;
+   background: transparent;
+   border: 1px solid var(--main-color);
+   cursor: pointer;
+   transition: all 0.15s linear;
+}
+
+.melissa .follow-profile:hover {
+   background: var(--main-color);
+}
+
+.melissa .followers-following {
+   margin-left: 15px;
+   margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+   .melissa .followers-following {
+      margin-left: 5px;
+      margin-right: 5px;
+   }
+}
+
+.melissa .filters {
+   width: 100%;
+}
+
+.melissa .filters button {
+   width: 50%;
+   float: left;
+   transform: translateX(8px);
+   border: 1px solid transparent;
+   font-size: 16px;
+   border-radius: 0px;
+}
+
+.melissa .filters button:hover {
+   background: var(--button-transparent-hover);
+   color: var(--text);
+}
+
+.melissa .filters button.active {
+   border-bottom: 3px solid var(--main-color);
+}
+
+.melissa .noteContent li {
+   margin-left: 15px;
+}
+
+.melissa .noteContent code {
+   font-family: "Inconsolata", monospace;
+   background: var(--note-background);
+}
+
+.melissa .info .uploadedImg {
+   display: block;
+   width: auto;
+   height: auto;
+   max-width: 425px;
+   max-height: 425px;
+   border-radius: 5px;
+   margin: 10px;
+   object-fit: contain;
+}
+
+@media (max-width: 425px) {
+   .melissa .info .uploadedImg {
+      margin: 0px;
+      max-width: 100%;
+      max-height: 100%;
+   }
+}

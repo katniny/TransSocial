@@ -1,0 +1,24 @@
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 35px;
+    gap: 20px;
+}
+
+.cta .textContent {
+    max-width: 600px;
+}
+
+.cta .imageContent img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+@media (max-width: 900px) {
+    .cta {
+        flex-direction: column;
+        text-align: center;
+    }
+}

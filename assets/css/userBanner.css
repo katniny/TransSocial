@@ -1,0 +1,57 @@
+.userImage-banner {
+   width: 100%;
+   height: 150px;
+   object-fit: cover;
+   object-position: center;
+   /* Center the image */
+   display: block;
+   outline: none;
+   border: 1px solid transparent;
+   background: var(--profile-picture-bg);
+   z-index: 0;
+   position: fixed;
+   margin-right: 0px;
+   border-right: 0px;
+}
+
+@media (max-width: 1750px) {
+   .userImage-banner {
+      width: 95%;
+   }
+}
+
+@media (max-width: 1592px) {
+   .userImage-banner {
+      width: 90%;
+   }
+}
+
+@media (max-width: 1468px) {
+   .userImage-banner {
+      width: 85%;
+   }
+}
+
+@media (max-width: 1354px) {
+   .userImage-banner {
+      width: 80%;
+   }
+}
+
+@media (max-width: 1270px) {
+   .userImage-banner {
+      width: 75%;
+   }
+}
+
+@media (max-width: 1188px) {
+   .userImage-banner {
+      width: 70%;
+   }
+}
+
+@media (max-width: 1148px) {
+   .userImage-banner {
+      width: 100%;
+   }
+}

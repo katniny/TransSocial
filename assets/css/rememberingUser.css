@@ -1,0 +1,9 @@
+.rememberingUser {
+    margin-left: 15px;
+    margin-top: 5px;
+    color: var(--text-semi-transparent);
+}
+
+.rememberingUser i {
+    color: var(--text-semi-transparent);
+}

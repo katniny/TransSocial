@@ -1,0 +1,133 @@
+@import url("/assets/css/pageLoader.css");
+@import url("/assets/css/defaultColors.css");
+@import url("/assets/css/header.css");
+@import url("/assets/css/sidebar.css");
+@import url("/assets/css/brandsIcon.css");
+@import url("/assets/css/notesContainer.css");
+@import url("/assets/css/aurideAccounts.css");
+@import url("/assets/css/notes.css");
+@import url("/assets/css/hamburgerMenu.css");
+@import url("/assets/css/notSignedIn_Banner.css");
+@import url("/assets/css/createNote_sidebarBtn.css");
+@import url("/assets/css/dialogDefault.css");
+@import url("/assets/css/newestUpdates_dialog.css");
+@import url("/assets/css/textarea.css");
+@import url("/assets/css/publishNoteBtn_inModal.css");
+@import url("/assets/css/noteCreationModalTabs.css");
+@import url("/assets/css/modalIcons.css");
+@import url("/assets/css/modalPopupPopoutAnim.css");
+@import url("/assets/css/dropdowns.css");
+@import url("/assets/css/newNotesAlert.css");
+@import url("/assets/css/versionNotice.css");
+@import url("/assets/css/newNotesAvailable.css");
+@import url("/assets/css/userNotFound.css");
+@import url("/assets/css/melissa.css");
+@import url("/assets/css/noteError.css");
+@import url("/assets/css/imgToBeUploaded.css");
+@import url("/assets/css/divider.css");
+@import url("/assets/css/replyToNote.css");
+@import url("/assets/css/noteContent.css");
+@import url("/assets/css/editIcon.css");
+@import url("/assets/css/cookieNotice.css");
+@import url("/assets/css/defaultButton.css");
+@import url("/assets/css/dangerButton.css");
+@import url("/assets/css/defaultInput.css");
+@import url("/assets/css/followButton.css");
+@import url("/assets/css/notifications.css");
+@import url("/assets/css/policiesSide.css");
+@import url("/assets/css/coverCreateANote.css");
+@import url("/assets/css/noteSent.css");
+@import url("/assets/css/sidebarPolicies.css");
+@import url("/assets/css/openChats.css");
+@import url("/assets/css/userActions.css");
+@import url("/assets/css/blockedPrompt.css");
+@import url("/assets/css/coverUpdatingNote.css");
+@import url("/assets/css/vidToUploaded.css");
+@import url("/assets/css/moreSidebarContent.css");
+@import url("/assets/css/profileSidebarContainer.css");
+@import url("/assets/css/userBanner.css");
+@import url("/assets/css/signOutButton.css");
+@import url("/assets/css/selectUserToDm.css");
+@import url("/assets/css/createNoteModal.css");
+@import url("/assets/css/backArrow.css");
+@import url("/assets/css/nsfwSensPolitChecks.css");
+@import url("/assets/css/scrollbar.css");
+@import url("/assets/css/downloadPage.css");
+@import url("/assets/css/loginRegisterPages.css");
+@import url("/assets/css/updates.css");
+@import url("/assets/css/achievementUnlock.css");
+@import url("/assets/css/quotes.css");
+@import url("/assets/css/accountManager.css");
+@import url("/assets/css/dropdownSelectionUser.css");
+@import url("/assets/css/settingsTabs.css");
+@import url("/assets/css/settingsPfp.css");
+@import url("/assets/css/themeSelect.css");
+@import url("/assets/css/activeChat.css");
+@import url("/assets/css/messagingBar.css");
+@import url("/assets/css/messagesContainer.css");
+@import url("/assets/css/messagingOtherProfile.css");
+@import url("/assets/css/userStudio.css");
+@import url("/assets/css/markdownToolbar.css");
+@import url("/assets/css/notificationsCount.css");
+@import url("/assets/css/browserLogos.css");
+@import url("/assets/css/animateGradient.css");
+@import url("/assets/css/footer.css");
+@import url("/assets/css/subscriptionTab.css");
+@import url("/assets/css/contributorBadge.css");
+@import url("/assets/css/contributors.css");
+@import url("/assets/css/spotifyPlayer.css");
+@import url("/assets/css/addToNote.css");
+@import url("/assets/css/defaultLink.css");
+@import url("/assets/css/bannerSettings.css");
+@import url("/assets/css/defaultSmall.css");
+@import url("/assets/css/themeSelected.css");
+@import url("/assets/css/registrationBadge.css");
+@import url("/assets/css/xmashat.css");
+@import url("/assets/css/aurora.css");
+@import url("/assets/css/glitchedText.css");
+@import url("/assets/css/selectionColors.css");
+@import url("/assets/css/resizeButtons.css");
+@import url("callToAction.css");
+@import url("sellingPoint.css");
+@import url("mainPoint.css");
+@import url("rememberingUser.css");
+@import url("serviceOutage.css");
+@import url("info.css");
+
+/* 
+   for some reason, vite is super picky about having
+   anything above the @import statements,
+   so no comments anymore. sorry :(
+
+   - katty
+*/
+
+/* fonts */
+@font-face {
+   font-family: "Gabarito";
+   src: url(/assets/fonts/Gabarito.ttf);
+}
+
+@font-face {
+   font-family: "Inconsolata";
+   src: url(/assets/fonts/Inconsolata.ttf);
+}
+
+/* Styles Everything */
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Gabarito', sans-serif;
+   color: var(--text);
+}
+
+/* Body Styling */
+body {
+   background: var(--background);
+   zoom: var(--zoom-level);
+   visibility: hidden;
+}
+
+body.loaderReady {
+   visibility: visible;
+}

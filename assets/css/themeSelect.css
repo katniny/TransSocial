@@ -1,0 +1,44 @@
+.themeContainer {
+   position: relative;
+   display: inline-block;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.themeImage {
+   display: block;
+   overflow: hidden;
+   width: 100%;
+   border-radius: 15px;
+}
+
+.themeText {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   color: #fff;
+   padding: 20px;
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+   font-size: 25px;
+   transition: all 0.3s ease;
+}
+
+.themeDescription {
+   position: absolute;
+   bottom: 40px;
+   left: 20px;
+   width: 100%;
+   font-size: 16px;
+   color: rgba(255, 255, 255, 0.7);
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+
+.themeContainer:hover .themeDescription {
+   opacity: 1;
+}
+
+.themeContainer:hover .themeText {
+   font-size: 16px;
+}

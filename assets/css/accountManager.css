@@ -1,0 +1,30 @@
+.accountManager {
+   background: var(--button-transparent-hover);
+   padding: 15px;
+   border-radius: 10px;
+   width: 250px;
+   position: absolute;
+   right: 5px;
+   top: 50px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   text-align: right;
+   z-index: 1000;
+}
+
+.accountManager button {
+   width: 100%;
+   padding: 8px;
+   background: var(--button-transparent);
+   border-radius: 8px;
+   border: 1px solid var(--sidebar-button-border);
+   cursor: pointer;
+   margin-top: 8px;
+   color: var(--sidebar-text);
+   text-align: right;
+   transition: background 0.2s, color 0.2s;
+}
+
+.accountManager button:hover {
+   background: var(--sidebar-button-hover);
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,17 @@
+#notificationsCount {
+   background: var(--main-color-darker);
+   width: 15px;
+   max-width: 15px;
+   text-align: center;
+   padding: 3px;
+   border-radius: 50%;
+   font-size: smaller;
+   position: absolute;
+   transform: translate(20px, -37px);
+   cursor: pointer;
+   display: none;
+}
+
+#notificationsCount.show {
+   display: block;
+}

@@ -1,0 +1,12 @@
+#imgToBeUploaded {
+   max-width: 450px;
+   max-height: 450px;
+   margin-top: 15px;
+   border-radius: 15px;
+}
+
+@media (max-width: 450px) {
+   #imgToBeUploaded {
+      max-width: 100%;
+   }
+}

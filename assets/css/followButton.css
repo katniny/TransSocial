@@ -1,0 +1,11 @@
+.followButton {
+   width: 150px;
+   margin-left: 15px;
+   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+   .followButton {
+      margin-left: 5px;
+   }
+}

@@ -1,0 +1,16 @@
+.dropdownSelectionUser {
+   background: var(--note-background);
+   transform: translate(172px);
+   width: 110px;
+   padding: 10px;
+   border-radius: 15px;
+}
+
+.dropdownSelectionUser button {
+   border: 1px solid transparent;
+   font-size: 15px;
+}
+
+.dropdownSelectionUser button:hover {
+   background: var(--sidebar-button-hover);
+}

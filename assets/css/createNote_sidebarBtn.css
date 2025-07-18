@@ -1,0 +1,8 @@
+.createNote-sidebar {
+   transform: translateY(35px);
+}
+
+.createNote-sidebar .fa-solid {
+   color: var(--sidebar-text);
+   -webkit-text-stroke-color: transparent;
+}

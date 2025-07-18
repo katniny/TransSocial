@@ -1,0 +1,8 @@
+#banner_settings {
+   object-fit: cover;
+   object-position: center;
+   display: block;
+   outline: none;
+   background: var(--profile-picture-bg);
+   border-radius: 15px;
+}

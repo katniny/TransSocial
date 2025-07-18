@@ -1,0 +1,26 @@
+.noteContent {
+   overflow-wrap: break-word;
+}
+
+@-moz-document url-prefix() {
+   .noteContent {
+      margin-top: 15px;
+      margin-bottom: 5px;
+   }
+}
+
+.noteContent .emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+
+.noteContent a {
+   color: var(--main-color);
+}
+
+.noteContent a:hover {
+   color: var(--main-color-darker);
+   text-decoration: none;
+}

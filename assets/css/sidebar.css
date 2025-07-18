@@ -1,0 +1,175 @@
+.sidebar {
+   position: fixed;
+   top: 50px;
+   left: 0;
+   width: 250px;
+   height: calc(100% - 50px);
+   background: var(--header-color);
+   box-shadow: 2px 0px 5px var(--header-shadow);
+   z-index: 1;
+   box-sizing: border-box;
+   border-radius: 0 10px 10px 0;
+   overflow-y: auto;
+   transition: transform 0.3s ease-in-out;
+   padding: 10px;
+}
+
+.sidebar .badge {
+   background: var(--main-color-darker);
+   padding: 2px 8px;
+   border-radius: 12px;
+   font-size: 0.8em;
+   margin-left: 5px;
+   color: var(--hovered-button-text);
+}
+
+@media (max-width: 768px) {
+   .sidebar {
+      display: none;
+      animation: closeSidebar normal;
+   }
+
+   .sidebarPolicies {
+      display: block;
+   }
+
+   .sidebar.open {
+      display: block;
+      animation: openSidebar normal;
+   }
+
+   @keyframes openSidebar {
+      0% {
+         opacity: 0;
+         transform: translateX(-150px);
+      }
+
+      100% {
+         opacity: 100;
+         transform: translateX(0px);
+      }
+   }
+
+   @keyframes closeSidebar {}
+}
+
+.sidebar .sidebarImg {
+   width: 95%;
+   margin-top: 10px;
+   margin-left: 5px;
+}
+
+.sidebar button {
+   width: calc(100% - 12px);
+   margin-left: 6px;
+   padding: 8px 14px;
+   font-size: 16.5px;
+   background: var(--button-background);
+   border-radius: 5000px; 
+   border: 1px solid var(--sidebar-button-border);
+   cursor: pointer;
+   text-align: left;
+   margin-top: 4px;
+   transition: background 0.25s, border-color 0.25s ease, box-shadow 0.25s ease;;
+   color: var(--sidebar-text);
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.sidebar button:hover {
+   background: var(--sidebar-button-hover);
+   border-color: var(--sidebar-button-hover-border);
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+   color: var(--sidebar-text);
+}
+
+.sidebar button:active {
+   transform: scale(0.98);
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.sidebar button.createNote-sidebar:active {
+   transform: translateY(35px) scale(0.98);
+}
+
+.sidebar .fa-solid {
+   color: transparent;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: var(--sidebar-text);
+}
+
+.sidebar button.active {
+   font-weight: bold;
+   color: var(--main-color);
+}
+
+.sidebar button.active .fa-solid {
+   color: var(--main-color);
+   -webkit-text-stroke-width: 0px;
+}
+
+.sidebar .bottom {
+   position: fixed;
+   bottom: 0;
+   margin-bottom: 15px;
+   margin-left: 5px;
+}
+
+.sidebar .bottom a {
+   font-size: 16px;
+}
+
+.sidebar #createNote-sidebar {
+   background: var(--main-color-darker);
+   text-align: center;
+   color: var(--sidebar-create-note-button);
+}
+
+.sidebar #createNote-sidebar i.fa-solid {
+   color: var(--sidebar-create-note-button);
+}
+
+.sidebar #createNote-sidebar:hover {
+   background: var(--main-color);
+   color: var(--sidebar-create-note-button-hover);
+}
+
+.sidebar #createNote-sidebar:hover i.fa-solid {
+   color: var(--sidebar-create-note-button-hover);
+}
+
+@media (max-width: 1148px) {
+   .sidebar {
+      display: none;
+   }
+}
+
+/* Profile Sidebar */
+.userPfp-sidebar {
+   width: 50px;
+   height: 50px;
+   background: var(--sidebar-button-hover);
+   border-radius: 50%;
+   float: left;
+}
+
+#displayName-sidebar {
+   width: auto;
+   height: auto;
+   float: left;
+   margin-left: 5px;
+}
+
+#displayName-sidebar .emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+
+#username-pronouns-sidebar {
+   float: left;
+   width: 50%;
+   height: auto;
+   transform: translateX(5px);
+   color: var(--text-semi-transparent);
+}

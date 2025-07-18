@@ -1,0 +1,7 @@
+.activeChat {
+   display: flex;
+   height: 63vh;
+   background: var(--note-background);
+   padding: 10px;
+   border-radius: 15px;
+}

@@ -1,0 +1,16 @@
+.dangerButton {
+   border: 1px solid var(--error-text);
+}
+
+.dangerButton:hover {
+   background: var(--error-text);
+}
+
+/* alt */
+.danger {
+   border: 1px solid var(--error-text);
+}
+
+.danger:hover {
+   background: var(--error-text);
+}

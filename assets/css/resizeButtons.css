@@ -1,0 +1,18 @@
+.resizeButtons {
+    display: flex;
+    width: 100%;
+}
+
+.resizeButtons button {
+    flex: 1;
+    min-width: 0;
+}
+
+.resizeButtons button.active {
+    background: var(--main-color);
+    color: var(--hovered-button-text);
+}
+
+.resizeButtons button.active:hover {
+    background: var(--main-color-darker);
+}

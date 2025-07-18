@@ -1,0 +1,37 @@
+dialog .settingsIcons-noteCreation {
+   transform: translateY(-3px);
+   width: 150px;
+}
+
+dialog .settingsIcons-noteCreation .icons {
+   margin-top: 5px;
+}
+
+dialog .settingsIcons-noteCreation .icons .fa-solid.fa-flag.fa-lg,
+dialog .settingsIcons-noteCreation .icons .fa-solid.fa-image.fa-lg,
+dialog .settingsIcons-noteCreation .icons .fa-solid.fa-comments.fa-lg,
+dialog .settingsIcons-noteCreation .icons .fa-solid.fa-music.fa-lg {
+   transition: all 0.1s linear;
+}
+
+dialog .settingsIcons-noteCreation .icons .fa-solid.fa-flag.fa-lg:hover,
+dialog .settingsIcons-noteCreation .icons .fa-solid.fa-image.fa-lg:hover,
+dialog .settingsIcons-noteCreation .icons .fa-solid.fa-comments.fa-lg:hover,
+dialog .settingsIcons-noteCreation .icons .fa-solid.fa-music.fa-lg:hover {
+   cursor: pointer;
+   color: var(--main-color);
+}
+
+dialog .fa-regular.fa-circle-xmark.fa-lg {
+   transition: all 0.1s linear;
+}
+
+dialog .fa-regular.fa-circle-xmark.fa-lg:hover {
+   color: var(--error-text);
+   cursor: pointer;
+}
+
+dialog .settingsStuff .optionAlt {
+   font-size: small;
+   color: var(--text-semi-transparent);
+}

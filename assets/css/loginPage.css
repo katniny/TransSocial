@@ -1,0 +1,212 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oxygen:wght@300;400;700&display=swap');
+
+/* Remove Default Styling */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: rgb(255, 134, 154);
+    margin: 15px;
+    margin-top: 50px;
+}
+
+/* Form Styling */
+.container {
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 25px 0px;
+    /*border-radius: 50px;*/
+}
+
+@media (max-width: 801px) {
+    .container {
+        width: 95%;
+    }
+}
+
+/* Input Fields */
+.container input {
+    width: 55%;
+    padding: 10px 10px 10px 10px;
+    outline: none;
+    background: none;
+    color: none;
+    border: 2px solid white;
+    color: white;
+    border-radius: 50px;
+    margin-top: 10px;
+    font-size: 15px;
+    transition: all 0.15s ease-in-out;
+}
+
+.container input:focus {
+    border: 2px solid pink;
+}
+
+/* "Footer" Styling */
+.footer {
+    margin-top: 15px;
+}
+
+/* Uploaded Profile Picture Preview */
+#uploadedPfp {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+/* Login Form */
+.login-form,
+.login-form * {
+    box-sizing: border-box;
+}
+
+.login-form {
+    max-width: 450px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.login-form__logo-container {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.login-form__logo {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.login-form__content {
+    padding: 30px;
+    background: #eeeeee;
+}
+
+.login-form__header {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333333;
+}
+
+.login-form__input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #dddddd;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.25s;
+}
+
+.login-form__input:focus {
+    border-color: rgb(255, 134, 154);
+}
+
+.login-form__input::placeholder {
+    color: #aaaaaa;
+}
+
+.login-form__button {
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    background: rgb(255, 134, 154);
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form__button:active,
+.login-form__button:hover {
+    background: rgba(255, 134, 154, 0.9);
+}
+
+.login-form__links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login-form__link {
+    font-size: 0.9em;
+    color: rgb(255, 134, 154);
+    text-decoration: none;
+}
+
+/* PFP Previewer */
+#previewImg {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+/* Profile Card */
+.profileCard {
+    border: 2px solid #000;
+    padding: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#userPfp {
+    width: 60px;
+    height: 60px;
+    float: left;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+/* Page Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1d1d;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: rgb(255, 134, 154);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}

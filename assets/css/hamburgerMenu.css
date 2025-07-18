@@ -1,0 +1,22 @@
+#hamburgerMenu {
+   font-size: x-large;
+   margin-left: 5px;
+   text-align: left;
+   transform: translateY(-20px);
+   background: transparent;
+   border: 1px solid transparent;
+}
+
+@media (min-width: 1149px) {
+   #hamburgerMenu {
+      display: none;
+   }
+}
+
+@media (max-width: 510px) {
+   #hamburgerMenu {
+      display: block;
+      position: fixed;
+      transform: translateY(5px);
+   }
+}

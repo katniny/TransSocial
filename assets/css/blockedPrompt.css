@@ -1,0 +1,12 @@
+.notes #ifUserBlocked_Current {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: var(--background);
+   z-index: 2;
+}
+
+.notes #ifUserBlocked_Current .content {
+   margin-left: 5px;
+   margin-right: 5px;
+}

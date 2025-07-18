@@ -1,0 +1,25 @@
+button {
+   background: transparent;
+   padding: 5px;
+   border-radius: 5px;
+   border: 1px solid var(--main-color);
+   margin-top: 5px;
+   cursor: pointer;
+   color: var(--button-text);
+   transition: all 0.1s linear;
+   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+button:hover {
+   background: var(--main-color);
+   color: var(--hovered-button-text);
+   box-shadow: 0 0 8px var(--main-color);
+}
+
+button:hover i {
+   color: var(--hovered-button-text);
+}
+
+button.disabled {
+   opacity: 0.5;
+}
