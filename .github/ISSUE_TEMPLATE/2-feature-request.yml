@@ -1,0 +1,42 @@
+name: Enhancement
+description: "File an enhancement request for Auride"
+title: "[Enhancement]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to help us improve Auride! Please note that these tickets are to be treated seriously, any content deemed disrespectful, non-serious, or does not adequately follow the steps below will be immediately closed and potentially removed.
+
+        This is an English-only form. If you do not speak English, please use Google Translate or similar to translate into English.
+  - type: textarea
+    attributes:
+      label: Description
+      description: "Provide a description of the enhancement you are requesting. Go into detail!"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: How would your feature improve Auride?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional Notes
+      description: "Anything else you have to say about your feature request?"
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Verification of Submission
+      description: Verify that you have selected options above and filled out request properly and in full. 
+      options:
+        - label: I agree that I properly filled out the items listed above.
+          required: true
+        - label: I understand an issue may be closed if process is not properly followed.
+          required: true 
+        - label: I will implement this feature myself
+          required: false 
+        - label: I have searched for similar issues
+          required: true
