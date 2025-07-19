@@ -4,8 +4,12 @@ import { getDatabase } from "firebase-admin/database";
 import dotenv from "dotenv";
 
 dotenv.config({ path: ".env.local" });
-
 const hostUrl = process.env.HOST_URL;
+
+// keep track of rate limit
+const rateLimitMap = new Map();
+const RATE_LIMIT_WINDOW = 5 * 60 * 1000; // 5 minutes
+const RATE_LIMIT_MAX = 60; // max 60 requests
 
 // init admin
 if (!getApps().length) {
@@ -21,6 +25,25 @@ if (!getApps().length) {
 
 export default async function handler(req, res) {
     const origin = req.headers.origin;
+
+    // handle rate limit
+    const ip = req.headers["x-forwarded-for"]?.split(",")[0] || req.connection.remoteAddress;
+    const now = Date.now();
+    const userData = rateLimitMap.get(ip) || { count: 0, startTime: now };
+
+    if (now - userData.startTime < RATE_LIMIT_WINDOW) {
+        if (userData.count >= RATE_LIMIT_MAX) {
+            return res.status(429).json({ error: "Too many requests. Please slow down." });
+        } else {
+            userData.count += 1;
+        }
+    } else {
+        // reset window
+        userData.count = 1;
+        userData.startTime = now;
+    }
+
+    rateLimitMap.set(ip, userData);
 
     // handle preflight
     if (req.method === "OPTIONS") {
