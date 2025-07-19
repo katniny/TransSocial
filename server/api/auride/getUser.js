@@ -49,7 +49,7 @@ export default async function handler(req, res) {
     if (req.method === "OPTIONS") {
         res.setHeader("Access-Control-Allow-Origin", origin || "*");
         res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
-        res.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type");
+        res.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type, X-Auride-UID");
         return res.status(204).end();
     }
 
@@ -59,7 +59,7 @@ export default async function handler(req, res) {
     }
     res.setHeader("Access-Control-Allow-Origin", origin);
     res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
-    res.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type");
+    res.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type, X-Auride-UID");
 
     // validate auth & data
     const authHeader = req.headers.authorization || "";
@@ -70,7 +70,11 @@ export default async function handler(req, res) {
 
     try {
         const decoded = await getAuth().verifyIdToken(token);
-        const snapshot = await getDatabase().ref(`/users/drg419QZePS7qh3yFkwPxUcd9NB3`).get();
+        const uid = req.headers["x-auride-uid"];
+        if (!uid) {
+            return res.status(400).json({ error: "Missing UID. Please try again with a UID." });
+        }
+        const snapshot = await getDatabase().ref(`/users/${uid}`).get();
 
         if (!snapshot.exists()) {
             return res.status(404).json({ error: "User not found" });
