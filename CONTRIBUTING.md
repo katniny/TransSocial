@@ -70,11 +70,23 @@ We only have **one** requirement for contributing to Auride (dependencies), as w
 ```bash
    git remote add upstream https://github.com/katniny/auride
 ```
-5. Go to /public/assets/js/firebase.js and replace the default firebaseConfig with your own. If you do not have one, please get one from the [Firebase Console](https://console.firebase.google.com/). **Make sure you do not commit these keys!**
+5. Go to the .env file and replace the default Firebase configuration with your own. If you do not have one, please get one from the [Firebase Console](https://console.firebase.google.com/). **Make sure you do not commit these keys! We .gitignore the .env by default!**
 6. If your Firebase project does not have the Blaze plan, please upgrade it to the Blaze plan. The reason is stated below.
 7. Run `npm install` to install all of Auride's dependencies
-8. Run `npm run dev` to start a local development server
-9. You're ready!
+8. (First-Time Setup) Run `npm run server`
+   - If prompted to login, login with your Vercel account. If you don't have one, we recommend creating one with your GitHub account. This is required for our server hosting. 
+   - Then, follow these prompts:
+      - "Set up DIR?" -> Select yes.
+      - "Which scope should contain your project?" -> Select any.
+      - "Link to existing project?" -> Select no.
+      - "What's your project's name?" -> Name it anything (we recommend something related to Auride for clarity!)
+      - "In which directory is your code located?" -> Type `server`
+      - "Want to modify these settings?" -> Select no.
+      - "Want to use the default Deployment Protection settings?" -> Select no.
+      - "What setting do you want to use for Vercel Authentication?" -> Select standard.
+9. After setup (if needed), run `npm run server` to start the local development server for the APIs. 
+10. Run `npm run dev` to start a local development server
+11. You're ready!
 
 ## ❓ Why do I need the Firebase Blaze plan?
 We use Firebase Storage. To access the Storage at all, it is required that you have the Blaze plan.

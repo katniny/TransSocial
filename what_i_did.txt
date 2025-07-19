@@ -14,7 +14,8 @@ yes, also the technical details:
 - Checking signed in/out status is quicker
     - Auride no longer waits for the entire page to load before redirecting
     if signed in/out. Auride will now await to see the users logged in status
-    before doing the appropriate action, if any is necessary at all.
+    before doing the appropriate action, if any is necessary at all, even if
+    the page isn't fully loaded yet.
 
 ## user end
 - Added reset password to the login page

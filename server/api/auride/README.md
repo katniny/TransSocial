@@ -1,0 +1,3 @@
+This is Auride's **official** private API, which should be restricted to https://auride.xyz only. If you are able to access it from another URL and fetch data, **please report it as a security vulernability.** 
+
+If you are locally hosting this URL (e.g. for contributing to Auride), you should be able to access the locally hosted version of this API by running `vercel dev`. You will need a Vercel account. See the [CONTRIBUTING.md GUIDE](/CONTRIBUTING.md) for a guide fo setting up Auride locally.
