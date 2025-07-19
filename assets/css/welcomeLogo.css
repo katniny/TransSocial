@@ -1,0 +1,65 @@
+.welcomeLogo {
+    position: fixed;
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* welcome animation #1 */
+.welcomeLogo.goToTop {
+    animation: goToTop 1.5s ease;
+}
+
+@keyframes goToTop {
+    0% {
+        transform: translate(-50%, 500%);
+    }
+    100% {
+        transform: translate(-50%, 0%);
+    }
+}
+
+/* welcome animation #2 */
+.welcomeLogo.sizeIncrease {
+    animation: sizeIncrease 1.5s ease;
+    box-shadow: 0 0 0px #ffde59;
+}
+
+@keyframes sizeIncrease {
+    0% {
+        transform: translate(-50%, 0%) scale(1);
+        filter: drop-shadow(0 0 0px #ffde59);
+    }
+    100% {
+        transform: translate(-50%, 0%) scale(1.5);
+        filter: drop-shadow(0 0 55px #ffde59);
+    }
+}
+
+/* welcome animation #3 */
+.welcomeLogo.slam {
+    animation: slam 1.5s ease;
+}
+
+@keyframes slam {
+    0% {
+        transform: translate(-50%, -110%) scale(1.5);
+        filter: drop-shadow(0 0 55px #ffde59);
+    }
+    25% {
+        transform: translate(-50%, -230%) scale(1.5);
+        filter: drop-shadow(0 0 15px #ffde59);
+    }
+    50% {
+        transform: translate(-50%, -240%) scale(1.7);
+        filter: drop-shadow(0 0 10px #ffde59);
+    }
+    75% {
+        transform: translate(-50%, -250%) scale(2);
+        filter: drop-shadow(0 0 5px #ffde59);
+    }
+    100% {
+        transform: translate(-50%, -300%) scale(1);
+        filter: drop-shadow(0 0 0px #ffde59);
+    }
+}

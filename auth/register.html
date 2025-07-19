@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register | Auride</title>
+        <link rel="shortcut icon" href="../assets/imgs/favicon.png" type="image/png">
+        
+        <!-- css -->
+        <link rel="stylesheet" href="../assets/css/all.css">
+
+        <!-- scripts -->
+        <script src="../assets/js/requiredScripts.js" type="module"></script>
+        <script defer type="module">
+            import { ScriptLoader } from "../assets/js/scriptLoader.js";
+
+            ScriptLoader.load(
+                //{ src: "../assets/js/auth/checkIfSignedIn.js", async: false, type: "module" },
+                { src: "../assets/js/auth/register.js", async: false, type: "module" },
+                { src: "../assets/js/ui/registrationPoints.js", async: false, type: "module" },
+                { src: "../assets/js/auth/registration/setDisplayAndUsername.js", async: false, type: "module" },
+                { src: "../assets/js/users/setNewDisplayName.js", async: false, type: "module" },
+                { src: "../assets/js/users/setNewUsername.js", async: false, type: "module" }
+            ).then(() => {
+                console.log("Scripts for this page have been loaded successfully.");
+            }).catch((error) => {
+                console.error("An error occurred: ", error, " please try refreshing.");
+            });
+        </script>
+    </head>
+    
+    <!-- TO:DO -->
+    <!-- add responsive to button on display/username section -->
+    <!-- add profile picture uploading -->
+
+    <body>
+        <div class="formBox">
+            <h1><i class="fa-solid fa-handshake-simple"></i> Welcome to Auride!</h1>
+            <p>Sign up for Auride and join a truly safe place. <a href="/auth/login">Have an account?</a></p>
+
+            <input type="text" id="email" placeholder="Enter your email address" />
+            <input type="password" id="password" placeholder="Enter a secure password" />
+            <p id="errorTxt" class="infoCaution" style="display: none;">No error message to display.</p>
+            <small>By joining Auride, you agree to our <a href="/policies/">policies</a>.</small>
+
+            <br />
+            <br />
+
+            <button style="width: 100%;" onclick="register()" id="registerBtn">Register</button>
+        </div>
+    </body>
+</html>

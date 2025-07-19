@@ -93,6 +93,7 @@
 @import url("rememberingUser.css");
 @import url("serviceOutage.css");
 @import url("info.css");
+@import url("welcomeLogo.css");
 
 /* 
    for some reason, vite is super picky about having
@@ -125,7 +126,7 @@
 body {
    background: var(--background);
    zoom: var(--zoom-level);
-   visibility: hidden;
+   /*visibility: hidden;*/
 }
 
 body.loaderReady {

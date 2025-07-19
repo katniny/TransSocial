@@ -19,9 +19,23 @@ yes, also the technical details:
 - Set up the Vercel server hosting
     - Auride now takes advantage of Vercel Serverless Functions to host our APIs, to make Auride much more 
     secure, faster, and expandable. https://vercel.com/docs/functions
+- JavaScript is now modularized (Related to "Start utilizing Vite and its modular JavaScript files")
+    - Auride now has all its code seperated into several files, rather than having all our code in
+    one huge file. This makes Auride easier to work with, but also will less likely result in several
+    things breaking when one thing does, which was the previous behavior.
+- Checking signed in/out status can be interrupted
+    - On pages that have these scripts, they can now be interrupted if it is not necessary when a
+    user first signs in. This is used on the registration page to ensure that we do not kick the
+    user out of the registration process because they're signed in.
 
 ## user end
 - Added reset password to the login page
     - Truly revoluntary feature, I know, but, Auride has been lacking this feature for
     a long time now. You were honestly SOL if you didn't know your password.
     Now it's not a worry! Unless you don't know your email...
+- Registration now happens all on one page
+    - The previous behavior was that everything would happen on seperate pages,
+    which caused a page reload each time which caused registration to be slower.
+- Added welcome animation
+    - When you sign up for Auride, you will now get a welcome message before
+    completing the onboarding process (setting your names, pronouns, etc., etc.)
