@@ -16,6 +16,9 @@ yes, also the technical details:
     if signed in/out. Auride will now await to see the users logged in status
     before doing the appropriate action, if any is necessary at all, even if
     the page isn't fully loaded yet.
+- Set up the Vercel server hosting
+    - Auride now takes advantage of Vercel Serverless Functions to host our APIs, to make Auride much more 
+    secure, faster, and expandable. https://vercel.com/docs/functions
 
 ## user end
 - Added reset password to the login page
